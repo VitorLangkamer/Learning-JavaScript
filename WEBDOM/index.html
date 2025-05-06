@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="convert-box">
+        <h1>Converter Dolár</h1>
+        <input type="number" placeholder="valor em Reais">
+        <button onclick="converter()">Converter</button>
+    </div>
+</body>
+<script>
+    const valor = document.querySelector("input") /*seleciona o input*/
+    function converter(){ 
+        const valconvert = valor.value / 5.75 /* seleciona apenas o valor escrito no input */
+        alert(` R$\ ${valor.value} são: $\ ${valconvert}`) // exibe um alerta na tela mostrando a conversão // 
+    }
+</script>
+</html>
